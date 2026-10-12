@@ -1,0 +1,19 @@
+name: Stack train
+
+# Keep this repository's stack-manifest.json honest against the certified train.
+# The reusable workflow lives in the train repo so no adopter copies the check.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  stack-train:
+    uses: Pukujan/agent-stack-train/.github/workflows/check-adopter.yml@main
+    with:
+      manifest: stack-manifest.json

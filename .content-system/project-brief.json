@@ -1,107 +1,90 @@
 {
   "schema_version": "content-generation.project-brief.v2",
-  "project": "Study OS",
+  "project": "Study OS v2",
   "audience": [
     "the project owner and subject-001 using Study OS for real DSA learning",
-    "agents and collaborators working on the Study OS repository",
+    "agents and collaborators working on the study-os-v2 repository",
     "reviewers evaluating whether its learning claims are supported"
   ],
   "problem": "A learner can be blocked by a course author's terminology, variable names, notation, control flow, decomposition, or amount of context rather than by the target concept, and AI help can produce working code before the learner can independently explain, trace, or rebuild it.",
   "solution": "Study OS uses AI to adapt representations while deterministic code and state control what is being learned, what assistance is allowed, when the learner may advance, and how evidence is interpreted.",
   "mechanism": [
-    "deterministic course state and learning controller authorize each pedagogical operation",
+    "deterministic lesson state and a learning controller authorize each pedagogical operation",
     "an AI representation engine realizes only authorized operations",
-    "durable operational evidence keeps observed, self-reported, and derived evidence separate",
-    "mastery claims require behavior beyond self-report: unaided work, transfer, and delayed retention"
+    "durable evidence keeps observed, self-reported, and derived claims separate",
+    "mastery claims require behavior beyond self-report: unaided work, transfer, and delayed retention",
+    "one relation changes at a time, and a correct retry is confirmed before the learner advances"
   ],
   "evidence": [
     {
-      "claim": "Study OS is currently a research-first DSA learning harness, not a general learning product.",
-      "source": "AGENTS.md opening statement",
+      "claim": "The v2 repository is a research-first rebuild that carries the prior evidence rather than the prior code.",
+      "source": "README.md, What Study OS is",
       "status": "shipped",
-      "supports": "The repository's agent contract declares the current scope as a research-first DSA harness.",
-      "limits": "It is a scope declaration; it does not show the harness produces learning gains.",
-      "recorded_at": "2026-09-24T20:55:00Z",
+      "supports": "The README states that the previous application code was scrapped and that the recorded sessions, curated content, learner record, and defining documents were kept verbatim.",
+      "limits": "A README statement is a scope declaration; it does not show that the rebuild produces learning gains.",
+      "recorded_at": "2026-10-12T19:45:00Z",
       "source_revision": {
         "kind": "repository_artifact",
-        "reference": "AGENTS.md at 151c819",
-        "repository": "Pukujan/Study-os",
-        "commit": "151c819e3457ae41fa1810b5060d0101f91bc12a",
-        "path": "AGENTS.md",
-        "locator": "line 3",
-        "uri": "https://github.com/Pukujan/Study-os/blob/151c819e3457ae41fa1810b5060d0101f91bc12a/AGENTS.md#L3"
+        "reference": "README.md at 3e59daf",
+        "repository": "Pukujan/study-os-v2",
+        "commit": "3e59dafa70cc41d9ff27ba25d27fd12d39ba02ce",
+        "path": "README.md",
+        "locator": "## What Study OS is",
+        "uri": "https://github.com/Pukujan/study-os-v2/blob/3e59dafa70cc41d9ff27ba25d27fd12d39ba02ce/README.md"
       },
       "cite_in_readme": false
     },
     {
-      "claim": "The project is at Research Gate R0.",
-      "source": "PROJECT_MANIFEST.yaml project.current_gate",
+      "claim": "A recorded learner session shows a representation mismatch blocking a problem the learner could otherwise reason about.",
+      "source": "Carried golden transcript of the Two Sum tutoring session",
       "status": "shipped",
-      "supports": "The machine-readable manifest records R0 as the current gate.",
-      "limits": "The gate value is maintained by hand; it is only as current as the last manifest update.",
-      "recorded_at": "2026-09-24T20:55:00Z",
+      "supports": "The transcript records the learner saying the code confused her, and the same variable renamed from seen to box resolving the block.",
+      "limits": "One learner and one session with no controlled comparison, and the export itself reports its turn set as PARTIAL and not established.",
+      "recorded_at": "2026-10-12T19:45:00Z",
       "source_revision": {
         "kind": "repository_artifact",
-        "reference": "PROJECT_MANIFEST.yaml at 151c819",
-        "repository": "Pukujan/Study-os",
-        "commit": "151c819e3457ae41fa1810b5060d0101f91bc12a",
-        "path": "PROJECT_MANIFEST.yaml",
-        "locator": "project.current_gate (line 7)",
-        "uri": "https://github.com/Pukujan/Study-os/blob/151c819e3457ae41fa1810b5060d0101f91bc12a/PROJECT_MANIFEST.yaml#L7"
+        "reference": "legacy/golden-transcript/study-os-tutor-two-sum-golden-6a8ca3b3.md at 3e59daf",
+        "repository": "Pukujan/study-os-v2",
+        "commit": "3e59dafa70cc41d9ff27ba25d27fd12d39ba02ce",
+        "path": "legacy/golden-transcript/study-os-tutor-two-sum-golden-6a8ca3b3.md",
+        "locator": "## User (line 9)",
+        "uri": "https://github.com/Pukujan/study-os-v2/blob/3e59dafa70cc41d9ff27ba25d27fd12d39ba02ce/legacy/golden-transcript/study-os-tutor-two-sum-golden-6a8ca3b3.md"
       },
       "cite_in_readme": false
     },
     {
-      "claim": "Adaptive components run with shadow authority only.",
-      "source": "PROJECT_MANIFEST.yaml learning.adaptive_authority",
-      "status": "shipped",
-      "supports": "The manifest sets adaptive authority to shadow, so adaptive selectors propose rather than control progression.",
-      "limits": "It records policy; runtime enforcement is covered by tests, not by this manifest entry.",
-      "recorded_at": "2026-09-24T20:55:00Z",
+      "claim": "The mobile short-session idea separates into an evidence-backed retention mode and an unsupported acquisition mode.",
+      "source": "Research synthesis, Implication for the subway thesis",
+      "status": "experimentally_supported",
+      "supports": "The synthesis reports spacing and retrieval practice as well-replicated for retaining material already met, and finds no evidence that minutes-a-day sessions build complex new skill.",
+      "limits": "This aggregates published studies; it is not a result from this project's own learners, and the acquisition-side design remains untested here.",
+      "recorded_at": "2026-10-12T19:45:00Z",
       "source_revision": {
         "kind": "repository_artifact",
-        "reference": "PROJECT_MANIFEST.yaml at 151c819",
-        "repository": "Pukujan/Study-os",
-        "commit": "151c819e3457ae41fa1810b5060d0101f91bc12a",
-        "path": "PROJECT_MANIFEST.yaml",
-        "locator": "learning.adaptive_authority (line 167)",
-        "uri": "https://github.com/Pukujan/Study-os/blob/151c819e3457ae41fa1810b5060d0101f91bc12a/PROJECT_MANIFEST.yaml#L167"
-      },
-      "cite_in_readme": false
-    },
-    {
-      "claim": "Raw/private learner transcripts do not belong in the public repository.",
-      "source": "AGENTS.md Data handling section",
-      "status": "shipped",
-      "supports": "The agent contract restricts the public repository to hashes, manifests, redacted fixtures, schemas, and curated derived records.",
-      "limits": "A written rule does not by itself prove no private data was ever committed; the public raw-evidence boundary test checks tracked paths.",
-      "recorded_at": "2026-09-24T20:55:00Z",
-      "source_revision": {
-        "kind": "repository_artifact",
-        "reference": "AGENTS.md at 151c819",
-        "repository": "Pukujan/Study-os",
-        "commit": "151c819e3457ae41fa1810b5060d0101f91bc12a",
-        "path": "AGENTS.md",
-        "locator": "## Data handling (line 94)",
-        "uri": "https://github.com/Pukujan/Study-os/blob/151c819e3457ae41fa1810b5060d0101f91bc12a/AGENTS.md#L94"
+        "reference": "research/SYNTHESIS.md at 3e59daf",
+        "repository": "Pukujan/study-os-v2",
+        "commit": "3e59dafa70cc41d9ff27ba25d27fd12d39ba02ce",
+        "path": "research/SYNTHESIS.md",
+        "locator": "Implication for the subway thesis (line 23)",
+        "uri": "https://github.com/Pukujan/study-os-v2/blob/3e59dafa70cc41d9ff27ba25d27fd12d39ba02ce/research/SYNTHESIS.md"
       },
       "cite_in_readme": false
     },
     {
       "claim": "Study OS measurably improves learning that survives fading, transfer, and delayed retrieval.",
-      "source": "PROJECT_MANIFEST.yaml research.primary_question",
+      "source": "Carried project boundary, Success criterion for v0.1",
       "status": "unknown",
-      "supports": "The manifest defines this as the primary research question and lists the required outcomes.",
+      "supports": "The boundary document defines unaided improvement, transfer, and delayed retention as the v0.1 success criterion.",
       "limits": "No committed result answers it; N=1 dogfooding cannot establish population efficacy, and self-report is not mastery evidence.",
-      "recorded_at": "2026-09-24T20:55:00Z",
+      "recorded_at": "2026-10-12T19:45:00Z",
       "source_revision": {
         "kind": "repository_artifact",
-        "reference": "PROJECT_MANIFEST.yaml at 151c819",
-        "repository": "Pukujan/Study-os",
-        "commit": "151c819e3457ae41fa1810b5060d0101f91bc12a",
-        "path": "PROJECT_MANIFEST.yaml",
-        "locator": "research.primary_question (line 24)",
-        "uri": "https://github.com/Pukujan/Study-os/blob/151c819e3457ae41fa1810b5060d0101f91bc12a/PROJECT_MANIFEST.yaml#L24"
+        "reference": "legacy/docs/PROJECT_BOUNDARY.md at 3e59daf",
+        "repository": "Pukujan/study-os-v2",
+        "commit": "3e59dafa70cc41d9ff27ba25d27fd12d39ba02ce",
+        "path": "legacy/docs/PROJECT_BOUNDARY.md",
+        "locator": "## Success criterion for v0.1 (line 145)",
+        "uri": "https://github.com/Pukujan/study-os-v2/blob/3e59dafa70cc41d9ff27ba25d27fd12d39ba02ce/legacy/docs/PROJECT_BOUNDARY.md"
       },
       "cite_in_readme": false
     }
@@ -111,7 +94,7 @@
     "self-report is not mastery evidence",
     "no fixed learning-styles framing",
     "generative media is not canonical algorithm state",
-    "private transcripts and private repositories never appear in public output",
+    "raw learner transcripts appear in this repository only where the learner authorized publication",
     "FOSSIL is optional export, not a runtime dependency"
   ],
   "terminology": {
