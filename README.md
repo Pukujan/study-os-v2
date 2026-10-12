@@ -16,7 +16,7 @@ Study OS is an instrumented learning procedure, not a course and not a chatbot. 
 
 The working thesis is narrower than "AI tutor." If a learner is stuck, the system should be able to name *which* representation failed — a symbol binding, a variable name, a missing intermediate step — change that one thing, and then check whether the learner can now do the step unaided. Every change is an intervention with a before and an after, recorded as evidence.
 
-The current version is a rebuild. The previous repository's architecture and application code were scrapped; what carried forward is the evidence — the golden transcript, the pedagogical findings from real sessions, and the research foundations. Those live under [`legacy/`](legacy/), and the new work starts from research rather than from the old code.
+The current version is a rebuild. The previous repository's architecture and application code were scrapped; what carried forward is the evidence — the recorded sessions, the curated DSA content, the learner record, and the documents that define the project. Those are kept verbatim in [`sessions/`](sessions/), [`domains/`](domains/), [`subjects/`](subjects/) and [`legacy/`](legacy/), and the new work starts from research rather than from the old code.
 
 ## How it works
 
@@ -52,4 +52,4 @@ The immediate work is the minimal loop that tests the thesis: one lane of DSA it
 
 The first experiment is cheap and specific. The founding anecdote has two competing explanations — that concrete names like `box` help, or that descriptive names help. The code-comprehension literature supports the second only for experienced developers, and the concreteness explanation has no direct evidence. Study OS's own response data can separate them.
 
-Read [`research/SYNTHESIS.md`](research/SYNTHESIS.md) for the map and the citations, [`legacy/`](legacy/) for the carried evidence, and [`POLICY.md`](POLICY.md) for how work here is run.
+Read [`research/SYNTHESIS.md`](research/SYNTHESIS.md) for the map and the citations, [`sessions/`](sessions/) and [`legacy/`](legacy/) for the carried evidence, and [`POLICY.md`](POLICY.md) for how work here is run.

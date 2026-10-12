@@ -1,0 +1,35 @@
+{
+  "session_id": "sliding-window-pedagogy-calibration",
+  "date": "2026-09-04",
+  "subject_id": "subject-001",
+  "domain": "dsa",
+  "concept": "sliding-window",
+  "purpose": "Preserve a live learner-driven calibration session that iteratively refined a beginner teaching sequence for array position, index, box/window size, moving start index, sum[i], consecutive window sums, enumerate(a), append conversion, the bridge into Python loop construction, max-sum tracking, control-flow combination, stop conditions, and a generalized first-window range(k) loop.",
+  "source": {
+    "provider": "chatgpt",
+    "capture_scope": "current visible conversation",
+    "verbatim_boundary": "The visible learner/assistant dialogue is preserved from the first visible learner answer '6' onward across transcript parts. Part 05 continues the fresh-chat resume/check and later sum → enumerate → append calibration. Parts 06-08 continue from the next visible turn through the combined-loop calibration and the learner request to save the transcript. Immediately preceding turns before the original part 01 boundary are available only as summarized continuity and are excluded from verbatim transcript files.",
+    "integrity_note": "This is a best-effort verbatim transcription of visible plain message bodies, not a cryptographic ChatGPT export. Archival role headings are added; tool calls, connector internals, transient rich UI/web citation chrome, and image binary contents may be omitted or represented as attachment markers."
+  },
+  "artifacts": {
+    "raw": [
+      "raw/chat-visible-transcript.md",
+      "raw/chat-visible-transcript-part01.md",
+      "raw/chat-visible-transcript-part02.md",
+      "raw/chat-visible-transcript-part03.md",
+      "raw/chat-visible-transcript-part04.md",
+      "raw/chat-visible-transcript-part05.md",
+      "raw/chat-visible-transcript-part06.md",
+      "raw/chat-visible-transcript-part07.md",
+      "raw/chat-visible-transcript-part08.md"
+    ],
+    "derived": [
+      "derived/pedagogy-findings.md",
+      "derived/resume-handoff.md",
+      "derived/next-session-analysis-handoff.md"
+    ],
+    "promoted_domain_fixture": "domains/dsa/sliding-window/golden/beginner-progressive-box-index-sum.v0.1.md",
+    "golden_extension": "domains/dsa/sliding-window/golden/beginner-sum-enumerate-append.v0.1.md"
+  },
+  "evidence_boundary": "This session is product-development and learning evidence. Transcript language and successful immediate responses are not mastery claims."
+}
