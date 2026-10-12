@@ -1,0 +1,67 @@
+{
+  "schema_version": "content-generation.visual-style.v1",
+  "reference_asset": ".content-system/characters/refs/pair-key-art.webp (style anchor: CGM assets/marketing/story-loop-square.png)",
+  "generation_workflow": "built-in image_gen",
+  "narrative_roles": [
+    "hero",
+    "problem",
+    "supporting",
+    "evidence",
+    "story",
+    "social"
+  ],
+  "palette": {
+    "background": "#111B4D night ink (dark) / #F4F1FF cream (light)",
+    "primary": "#8F7CFF violet",
+    "accent": "#63D9FF cyan",
+    "warm_accent": "#FF8A70 coral",
+    "text": "#111B4D on light, #F4F1FF on dark",
+    "support": {
+      "mint": "#94E3CB",
+      "gold": "#FFD28A"
+    },
+    "light": "blue-violet evening light with warm accents"
+  },
+  "subjects": [
+    "canonical characters only (.content-system/characters): the adult anime Learner and the robot Helper; the chibi Learner is the in-app pet, the chibi Helper is an idle-only supporting visitor; deterministic trace/state diagrams stay code-rendered",
+    "never a human-like AI tutor presented as authority"
+  ],
+  "composition": [
+    "one dominant idea",
+    "main subjects remain visible",
+    "deterministic DSA state shown as diagrams, not generated imagery"
+  ],
+  "text_policy": "narrative raster assets carry one short title plus one short subtitle; icons, SVGs, logos, and algorithm-state diagrams remain generated deterministically and text-minimal",
+  "roles": {
+    "hero": {
+      "orientation": "wide",
+      "dimensions": "1600x900"
+    },
+    "problem": {
+      "orientation": "wide",
+      "dimensions": "1600x900"
+    },
+    "system": {
+      "orientation": "square",
+      "dimensions": "1200x1200"
+    },
+    "evidence": {
+      "orientation": "portrait",
+      "dimensions": "1080x1350"
+    }
+  },
+  "reject_when": [
+    "implies mastery or efficacy not supported by evidence",
+    "depicts private learner data or transcript text",
+    "uses generated media as authoritative algorithm state",
+    "adopts CGM's default characters instead of the Study OS canonical characters",
+    "off-model: differs from the canonical refs (hair clip side, beauty mark, outfit colours, robot fin-ears/scarf)",
+    "hand-authored SVG used in place of an image asset"
+  ],
+  "status_note": "CGM palette and canonical characters applied in SOS-0005 (Refs #103); owner review pending.",
+  "styles": {
+    "general_art": "mature anime editorial (lesson illustrations, onboarding, lane cards, empty states, hero)",
+    "mascot": "chibi sticker style of the same canonical characters"
+  },
+  "generator_notes": "SOS-0005: images generated with InferHub cb/gemini-3.1-flash-image using the canonical character refs; see .content-system/characters/README.md"
+}

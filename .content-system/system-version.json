@@ -1,0 +1,30 @@
+{
+  "schema_version": "content-generation.adapter.v1",
+  "system": "content-generation-modules",
+  "helper_repository": "https://github.com/Pukujan/content-generation-modules",
+  "helper_version": "0.5.12",
+  "helper_commit": "5c8c5f167098d04cf96fb1fe449880001a1edd14",
+  "helper_pin_note": "Pinned to CGM 0.5.12 (FULL: eight modules) per acs-work stack-mesh.json. Load writing-direction for README/product entry; load human-sounding-writing for every other human-facing surface; load human-output-naming for generated artifact filenames. Validate with scripts/validate_content_system.py, then apply acs_prompt_inject. Do not vendor CGM into this repo.",
+  "modules": [
+    "brand-foundation",
+    "content-context",
+    "writing-direction",
+    "human-sounding-writing",
+    "human-output-naming",
+    "visual-direction",
+    "image-generation",
+    "html-demo"
+  ],
+  "authoritative_project_files": [
+    "AGENTS.md",
+    "PROJECT_MANIFEST.yaml",
+    "README.md",
+    "docs/PROJECT_CHARTER.md",
+    "docs/PROJECT_BOUNDARY.md",
+    "docs/HANDOFF.md",
+    "docs/DATA_POLICY.md",
+    "docs/AUTHORITY.md"
+  ],
+  "review_outputs": [],
+  "adoption_status": "adapter carried forward into study-os v2 from the archived v0 repo; asset-manifest trimmed to the canonical character refs that exist in this tree"
+}

@@ -1,0 +1,186 @@
+{
+  "schema_version": "content-generation.asset-manifest.v1",
+  "system_version": "0.5.1",
+  "assets": [
+    {
+      "id": "char-learner-turnaround",
+      "path": ".content-system/characters/refs/learner-turnaround.webp",
+      "role": "character-reference",
+      "subject": "learner",
+      "description": "turnaround (front / three-quarter / side), mature anime",
+      "dimensions": "1024x1024",
+      "model": "cb/gemini-3.1-flash-image",
+      "provider": "InferHub",
+      "prompt_file": ".content-system/characters/prompts/learner-turn.full.txt",
+      "prompt_sha256": "91ab569f5f09c5b0dae5294f7c8ca9ecde9d05708fcba3699d992c743b77ad04",
+      "references": [
+        {
+          "path": "cgm-look/assets/marketing/story-loop-square.png",
+          "sha256": "c38720314c79e7b1cc5693ebbb3e50fd2524675c3171e28e21c497c9d5c5d0c6"
+        }
+      ],
+      "settings": {
+        "modalities": [
+          "image",
+          "text"
+        ],
+        "seed": "not supported by provider"
+      },
+      "source_sha256": "2582d8eb5bd8077127c56f41aacf8731bafb2a938f2b33e6421b73d94c501f9f",
+      "final_sha256": "60aec2c99da0ba693f8ce0c1fd25f34967bc0322f6835d35c061576141511fc8",
+      "review": "canonical (accepted by orchestrator; owner review pending)",
+      "generated_at": "2026-09-24T19:53:51-0400"
+    },
+    {
+      "id": "char-learner-expressions",
+      "path": ".content-system/characters/refs/learner-expressions.webp",
+      "role": "character-reference",
+      "subject": "learner",
+      "description": "expression sheet, mature anime",
+      "dimensions": "1024x1024",
+      "model": null,
+      "provider": "InferHub",
+      "prompt_file": ".content-system/characters/prompts/",
+      "prompt_sha256": null,
+      "references": [],
+      "settings": {
+        "modalities": [
+          "image",
+          "text"
+        ],
+        "seed": "not supported by provider"
+      },
+      "source_sha256": "eb3773dfac9a1c783326b812ad85b04632b16d8c880fce144cb5fb2665a00bbc",
+      "final_sha256": "61a61f590f00ca3e3329beada2d3857eb33ab17cc5ac00c8f521c8835f42f2f3",
+      "review": "canonical (accepted by orchestrator; owner review pending)",
+      "generated_at": null
+    },
+    {
+      "id": "char-helper-turnaround",
+      "path": ".content-system/characters/refs/helper-turnaround.webp",
+      "role": "character-reference",
+      "subject": "helper",
+      "description": "turnaround (front / three-quarter / side)",
+      "dimensions": "1024x1024",
+      "model": "cb/gemini-3.1-flash-image",
+      "provider": "InferHub",
+      "prompt_file": ".content-system/characters/prompts/robot-turn.full.txt",
+      "prompt_sha256": "07e8b28eb045abe8be80d83158daf940e427b5ae44e6f071dbd9015f064aa454",
+      "references": [
+        {
+          "path": "cgm-look/assets/marketing/story-loop-square.png",
+          "sha256": "c38720314c79e7b1cc5693ebbb3e50fd2524675c3171e28e21c497c9d5c5d0c6"
+        }
+      ],
+      "settings": {
+        "modalities": [
+          "image",
+          "text"
+        ],
+        "seed": "not supported by provider"
+      },
+      "source_sha256": "b62d72772e08426bc46871299079b1eecb30f6234e52dcfebd993a82d407a2d5",
+      "final_sha256": "e6c48d70c771a4dfc6ebc0a8adf3c48c92c8f51430d28ece0431d615c420bac7",
+      "review": "canonical (accepted by orchestrator; owner review pending)",
+      "generated_at": "2026-09-24T19:53:52-0400"
+    },
+    {
+      "id": "char-helper-expressions",
+      "path": ".content-system/characters/refs/helper-expressions.webp",
+      "role": "character-reference",
+      "subject": "helper",
+      "description": "expression sheet",
+      "dimensions": "1024x1024",
+      "model": null,
+      "provider": "InferHub",
+      "prompt_file": ".content-system/characters/prompts/",
+      "prompt_sha256": null,
+      "references": [],
+      "settings": {
+        "modalities": [
+          "image",
+          "text"
+        ],
+        "seed": "not supported by provider"
+      },
+      "source_sha256": "921bd04e1422fee3dac7267985452852e48abbcd53163e9d01f6f16fad073fd1",
+      "final_sha256": "49628de73d67deeaecbe840d46048eec0fe3fe37d2f498ff41c962f0c84836d8",
+      "review": "canonical (accepted by orchestrator; owner review pending)",
+      "generated_at": null
+    },
+    {
+      "id": "char-pair-key-art",
+      "path": ".content-system/characters/refs/pair-key-art.webp",
+      "role": "character-reference",
+      "subject": "both",
+      "description": "key art: learner + helper, mature anime, style anchor for general art",
+      "dimensions": "1024x1024",
+      "model": null,
+      "provider": "InferHub",
+      "prompt_file": ".content-system/characters/prompts/",
+      "prompt_sha256": null,
+      "references": [],
+      "settings": {
+        "modalities": [
+          "image",
+          "text"
+        ],
+        "seed": "not supported by provider"
+      },
+      "source_sha256": "1d1bd061197f487558c83c12a2efaf85805ef35ca531d0d43e876ae90ee38cf2",
+      "final_sha256": "e8105b7795ac4061ed81d108571074a624930b2285f8cd8f077fe47ae8ccfee9",
+      "review": "canonical (accepted by orchestrator; owner review pending)",
+      "generated_at": null
+    },
+    {
+      "id": "char-learner-chibi-master",
+      "path": ".content-system/characters/refs/learner-chibi-master.webp",
+      "role": "character-reference",
+      "subject": "learner",
+      "description": "chibi PET master (main in-app mascot)",
+      "dimensions": "1024x1024",
+      "model": null,
+      "provider": "InferHub",
+      "prompt_file": ".content-system/characters/prompts/",
+      "prompt_sha256": null,
+      "references": [],
+      "settings": {
+        "modalities": [
+          "image",
+          "text"
+        ],
+        "seed": "not supported by provider"
+      },
+      "source_sha256": "5f610925f64d3f0601dee097f709f88b75fbace01afc3049432d6190b8238e6f",
+      "final_sha256": "7a98a1e42e4761b6a1090e6c436ff9f53c855ee6faebe5f279d8bb69bd6d3b0f",
+      "review": "canonical (accepted by orchestrator; owner review pending)",
+      "generated_at": null,
+      "processing": "chroma-keyed to transparent (mascot/visit.py key())"
+    },
+    {
+      "id": "char-helper-chibi-master",
+      "path": ".content-system/characters/refs/helper-chibi-master.webp",
+      "role": "character-reference",
+      "subject": "helper",
+      "description": "chibi robot master (supporting idle visitor)",
+      "dimensions": "1024x1024",
+      "model": null,
+      "provider": "InferHub",
+      "prompt_file": ".content-system/characters/prompts/",
+      "prompt_sha256": null,
+      "references": [],
+      "settings": {
+        "modalities": [
+          "image",
+          "text"
+        ],
+        "seed": "not supported by provider"
+      },
+      "source_sha256": "bc6d890322568958738305a79740bca5f9599363383ac90c9f7eb87fb9a7ce38",
+      "final_sha256": "9237728e93a83ec51dca897b59b4eb3acd0c1d2868a4b788face83122968707e",
+      "review": "canonical (accepted by orchestrator; owner review pending)",
+      "generated_at": null,
+      "processing": "chroma-keyed to transparent (mascot/visit.py key())"
+    }
+  ]
+}
